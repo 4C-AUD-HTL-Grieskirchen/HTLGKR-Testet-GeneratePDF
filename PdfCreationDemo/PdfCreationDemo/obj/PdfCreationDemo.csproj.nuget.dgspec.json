@@ -1,0 +1,96 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Julia\\Desktop\\AUD-PDFCreation\\PdfCreation\\PdfCreationDemo\\PdfCreationDemo\\PdfCreationDemo.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Julia\\Desktop\\AUD-PDFCreation\\PdfCreation\\PdfCreationDemo\\PdfCreationDemo\\PdfCreationDemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Julia\\Desktop\\AUD-PDFCreation\\PdfCreation\\PdfCreationDemo\\PdfCreationDemo\\PdfCreationDemo.csproj",
+        "projectName": "PdfCreationDemo",
+        "projectPath": "C:\\Users\\Julia\\Desktop\\AUD-PDFCreation\\PdfCreation\\PdfCreationDemo\\PdfCreationDemo\\PdfCreationDemo.csproj",
+        "packagesPath": "C:\\Users\\Julia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Julia\\Desktop\\AUD-PDFCreation\\PdfCreation\\PdfCreationDemo\\PdfCreationDemo\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5",
+          "dependencies": {
+            "FireSharp.Serialization.JsonNet": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Firebase.Auth": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "System.IO.FileSystem.AccessControl": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Security.AccessControl": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.2, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[7.1.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
