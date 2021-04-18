@@ -6432,19 +6432,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Julia\\.nuget\\packages\\": {}
+    "C:\\Users\\Michael\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Julia\\Desktop\\AUD-PDFCreation\\PdfCreation\\PdfCreationDemo\\PdfCreationDemo\\PdfCreationDemo.csproj",
+      "projectUniqueName": "F:\\Dev\\C#\\HTLGKR-Testet-GeneratePDF\\PdfCreationDemo\\PdfCreationDemo\\PdfCreationDemo.csproj",
       "projectName": "PdfCreationDemo",
-      "projectPath": "C:\\Users\\Julia\\Desktop\\AUD-PDFCreation\\PdfCreation\\PdfCreationDemo\\PdfCreationDemo\\PdfCreationDemo.csproj",
-      "packagesPath": "C:\\Users\\Julia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Julia\\Desktop\\AUD-PDFCreation\\PdfCreation\\PdfCreationDemo\\PdfCreationDemo\\obj\\",
+      "projectPath": "F:\\Dev\\C#\\HTLGKR-Testet-GeneratePDF\\PdfCreationDemo\\PdfCreationDemo\\PdfCreationDemo.csproj",
+      "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
+      "outputPath": "F:\\Dev\\C#\\HTLGKR-Testet-GeneratePDF\\PdfCreationDemo\\PdfCreationDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Michael\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6456,7 +6456,7 @@
       },
       "frameworks": {
         "net5.0": {
-          "targetAlias": "net5",
+          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -6468,7 +6468,7 @@
     },
     "frameworks": {
       "net5.0": {
-        "targetAlias": "net5",
+        "targetAlias": "net5.0",
         "dependencies": {
           "FireSharp.Serialization.JsonNet": {
             "target": "Package",
@@ -6518,7 +6518,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   },

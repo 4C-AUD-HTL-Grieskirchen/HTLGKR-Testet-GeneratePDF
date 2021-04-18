@@ -28,3 +28,7 @@ C:\Users\Julia\Desktop\Test\PdfCreation\PdfCreationDemo\PdfCreationDemo\obj\Debu
 C:\Users\Julia\Desktop\Test\PdfCreation\PdfCreationDemo\PdfCreationDemo\obj\Debug\netcoreapp3.1\PdfCreationDemo.pdb
 C:\Users\Julia\Desktop\Test\PdfCreation\PdfCreationDemo\PdfCreationDemo\obj\Debug\netcoreapp3.1\PdfCreationDemo.genruntimeconfig.cache
 C:\Users\Julia\Desktop\Test\PdfCreation\PdfCreationDemo\PdfCreationDemo\obj\Debug\netcoreapp3.1\PdfCreationDemo.csprojAssemblyReference.cache
+F:\Dev\C#\HTLGKR-Testet-GeneratePDF\PdfCreationDemo\PdfCreationDemo\obj\Debug\netcoreapp3.1\PdfCreationDemo.csprojAssemblyReference.cache
+F:\Dev\C#\HTLGKR-Testet-GeneratePDF\PdfCreationDemo\PdfCreationDemo\obj\Debug\netcoreapp3.1\PdfCreationDemo.AssemblyInfoInputs.cache
+F:\Dev\C#\HTLGKR-Testet-GeneratePDF\PdfCreationDemo\PdfCreationDemo\obj\Debug\netcoreapp3.1\PdfCreationDemo.AssemblyInfo.cs
+F:\Dev\C#\HTLGKR-Testet-GeneratePDF\PdfCreationDemo\PdfCreationDemo\obj\Debug\netcoreapp3.1\PdfCreationDemo.csproj.CoreCompileInputs.cache
