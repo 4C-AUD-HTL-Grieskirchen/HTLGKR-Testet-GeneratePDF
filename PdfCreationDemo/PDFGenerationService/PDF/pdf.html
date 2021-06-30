@@ -7,63 +7,63 @@
 </head>
 <body>
 
-    <img class="logo" src="assets/logo.png" alt="">
+<img class="logo" src="assets/logo.png" alt="">
 
-    <div class="qr">
-        <img src="assets/qr.svg" alt="">
-        <div>
-            <h2>r9VsjfGZAUmQ0OjPcZZk</h2>
-            <hr>
-            <p>Fortlaufende Laufzettel-Nummer</p>
-        </div>
+<div class="qr">
+    <img src="assets/qr.svg" alt="">
+    <div>
+        <h2>{{doc_id}}</h2>
+        <hr>
+        <p>Fortlaufende Laufzettel-Nummer</p>
     </div>
+</div>
 
-    <h1>Aktion "Österreich testet"</h1>
-    <h2>Einwilligungserklärung Antigen-Test</h2>
-    <h2>SARS-CoV-2 / Covid-19</h2>
+<h1>Aktion "Österreich testet"</h1>
+<h2>Einwilligungserklärung Antigen-Test</h2>
+<h2>SARS-CoV-2 / Covid-19</h2>
 
-    <h4>Zu testende Person</h4>
-    <div class="data">
-        <table>
-            <tbody>
-                <tr>
-                    <td>Name:</td>
-                    <td></td>
-                    <td>Geburtsdatum:</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Geschlecht:</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Vorname:</td>
-                    <td></td>
-                    <td>SV-Nummer (10-stellig):</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>PLZ, Ort:</td>
-                    <td></td>
-                    <td>Mobiltelefonnummer:</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Straße, Hausnummer:</td>
-                    <td></td>
-                    <td>E-mail-Adresse:</td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<h4>Zu testende Person</h4>
+<div class="data">
+    <table>
+        <tbody>
+        <tr>
+            <td>Name:</td>
+            <td>{{lastname}}</td>
+            <td>Geburtsdatum:</td>
+            <td>{{birthdate}}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Geschlecht:</td>
+            <td>{{gender}}</td>
+        </tr>
+        <tr>
+            <td>Vorname:</td>
+            <td>{{firstname}}</td>
+            <td>SV-Nummer (10-stellig):</td>
+            <td>{{social}}</td>
+        </tr>
+        <tr>
+            <td>PLZ, Ort:</td>
+            <td>{{plz}} {{location}}</td>
+            <td>Mobiltelefonnummer:</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Straße, Hausnummer:</td>
+            <td></td>
+            <td>E-mail-Adresse:</td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 
-    <div class="checkbox">
-        <span></span>
-        <p>Hiermit erkläre ich ausdrücklich meine Zustimmung zur elektronischen Erfassung und Weiterverarbeitung meiner Daten sowie die freiwillige Durchführung eines Testabstrichs zur Durchführung eines Antigen-Schnelltests auf SARS-CoV-2 /Covid-19 (gemäß Informationen und Datenschutzerklärung auf <a href="www.österreich-testet.gv.at/datenschutz">www.österreich-testet.gv.at/datenschutz</a></p>
-    </div>
+<div class="checkbox">
+    <span></span>
+    <p>Hiermit erkläre ich ausdrücklich meine Zustimmung zur elektronischen Erfassung und Weiterverarbeitung meiner Daten sowie die freiwillige Durchführung eines Testabstrichs zur Durchführung eines Antigen-Schnelltests auf SARS-CoV-2 /Covid-19 (gemäß Informationen und Datenschutzerklärung auf <a href="www.österreich-testet.gv.at/datenschutz">www.österreich-testet.gv.at/datenschutz</a></p>
+</div>
 
 </body>
 </html>

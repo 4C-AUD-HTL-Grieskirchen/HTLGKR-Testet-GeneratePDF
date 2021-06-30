@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 using Google.Apis.Auth.OAuth2;
 using Google.Cloud.Storage.V1;
 
 namespace PDFGenerationService
 {
-    class StorageManager
+    internal class StorageManager
     {
-        private StorageClient client;
+        private readonly StorageClient client;
 
         public StorageManager(string jsonString)
         {
@@ -21,8 +16,8 @@ namespace PDFGenerationService
 
         public void UploadFile(string filename, string targetname)
         {
-            client.UploadObject("htlgkr-testet.appspot.com", $"registration-pdf/{targetname}.pdf", null, File.Open(filename, FileMode.Open));
+            client.UploadObject("htlgkr-testet.appspot.com", $"registration-pdf/{targetname}.pdf", null,
+                File.Open(filename, FileMode.Open));
         }
-        
     }
 }
