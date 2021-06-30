@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Cloud.Firestore" Version="2.4.0" />
+    <PackageReference Include="Google.Cloud.Storage.V1" Version="3.5.0" />
+    <PackageReference Include="IronPdf" Version="2021.3.1" />
+    <PackageReference Include="itext7" Version="7.1.15" />
+    <PackageReference Include="itext7.pdfhtml" Version="3.0.4" />
+    <PackageReference Include="Polybioz.HtmlRenderer.PdfSharp.Core" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="htlgkr-testet-firebase-adminsdk-s5lca-0cbf2afb33.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="PDF\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

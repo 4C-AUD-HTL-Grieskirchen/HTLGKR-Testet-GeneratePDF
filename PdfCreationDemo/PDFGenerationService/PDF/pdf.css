@@ -1,0 +1,78 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+    max-width: 30%;
+}
+
+.qr {
+    width: fit-content;
+
+    float: right;
+
+    border: 2px solid #616161;
+    padding: 20px;
+
+    position: relative;
+}
+
+.qr h2 {
+    margin-top: 120px;
+}
+
+.qr p {
+    margin: 0;
+}
+
+.qr > img {
+    position: absolute;
+    height: 100px;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, 0);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+h4 {
+    margin-top: 80px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+tr {
+    height: 35px;
+}
+
+tr > td:nth-child(2n - 1) {
+    text-align: right;
+    font-size: 13px;
+    padding-right: 10px;
+}
+
+tr > td:nth-child(2n) {
+    border: 1px black solid;
+}
+
+.data {
+    margin-bottom: 20px;
+}
+
+
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url("/assets/OpenSans-Regular.ttf");
+}
