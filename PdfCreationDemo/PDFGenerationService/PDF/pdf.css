@@ -62,6 +62,7 @@ tr > td:nth-child(2n - 1) {
 
 tr > td:nth-child(2n) {
     border: 1px black solid;
+    padding: 0 5px;
 }
 
 .data {
