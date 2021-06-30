@@ -1,34 +1,26 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-}
+body { font-family: 'Open Sans', sans-serif; }
 
-.logo {
-    max-width: 30%;
-}
+.logo { max-width: 30%; }
 
 .qr {
-    width: fit-content;
+    border: 2px solid #616161;
 
     float: right;
 
-    border: 2px solid #616161;
     padding: 20px;
-
     position: relative;
+
+    width: fit-content;
 }
 
-.qr h2 {
-    margin-top: 120px;
-}
+.qr h2 { margin-top: 120px; }
 
-.qr p {
-    margin: 0;
-}
+.qr p { margin: 0; }
 
 .qr > img {
-    position: absolute;
     height: 100px;
     left: 50%;
+    position: absolute;
     top: 20px;
     transform: translate(-50%, 0);
 }
@@ -43,32 +35,24 @@ h2 {
     margin: 5px 0;
 }
 
-h4 {
-    margin-top: 80px;
-}
+h4 { margin-top: 80px; }
 
 table {
-    width: 100%;
     table-layout: fixed;
+    width: 100%;
 }
 
-tr {
-    height: 35px;
-}
+tr { height: 35px; }
 
 tr > td:nth-child(2n - 1) {
-    text-align: right;
     font-size: 13px;
     padding-right: 10px;
+    text-align: right;
 }
 
-tr > td:nth-child(2n) {
-    border: 1px black solid;
-}
+tr > td:nth-child(2n) { border: 1px black solid; }
 
-.data {
-    margin-bottom: 20px;
-}
+.data { margin-bottom: 20px; }
 
 
 

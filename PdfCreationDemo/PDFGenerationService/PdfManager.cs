@@ -1,20 +1,6 @@
-﻿
-
-
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using Google.Cloud.Firestore.V1;
-using Google.LongRunning;
-using IronPdf;
-using iText.Html2pdf;
-using iText.Html2pdf.Attach.Impl.Layout;
-using iText.Kernel.Pdf;
-using PdfSharpCore;
-using TheArtOfDev.HtmlRenderer.PdfSharp;
-using PageSize = iText.Kernel.Geom.PageSize;
-using PdfDocument = iText.Kernel.Pdf.PdfDocument;
+
 
 
 namespace PDFGenerationService
