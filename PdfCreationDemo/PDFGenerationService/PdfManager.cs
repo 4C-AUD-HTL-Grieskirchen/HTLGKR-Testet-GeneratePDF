@@ -19,7 +19,7 @@ using PdfDocument = iText.Kernel.Pdf.PdfDocument;
 
 namespace PDFGenerationService
 {
-    class PdfManager
+    public class PdfManager
     {
         public void GeneratePDF(Dictionary<string, object> dict)
         {
@@ -31,13 +31,11 @@ namespace PDFGenerationService
                 html = html.Replace("{{" + key + "}}", value.ToString());
             }
             
-            var Renderer = new IronPdf.HtmlToPdf();
+            var renderer = new IronPdf.HtmlToPdf();
             
-            var PDF = Renderer.RenderHtmlAsPdf(html, "./PDF");
-            var OutputPath = "out.pdf";
-            PDF.SaveAs(OutputPath);
-
+            var pdfDoc = renderer.RenderHtmlAsPdf(html, "./PDF");
             
+            pdfDoc.SaveAs("out.pdf");
 
         }
     }

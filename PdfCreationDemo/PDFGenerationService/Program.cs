@@ -31,8 +31,7 @@ namespace PDFGenerationService
                     {
                         var doc = change.Document;
                         var dict = doc.ToDictionary();
-
-                        // Console.WriteLine($"Document ID: {doc.Id}");
+                        dict["doc_id"] = doc.Id;
 
                         string email = dict["email"] as string;
                         bool? created = dict["registrationPdfCreated"] as bool?;
@@ -46,7 +45,6 @@ namespace PDFGenerationService
                             change.Document.Reference.UpdateAsync("registrationPdfCreated", true);
 
                         }
-
                     }
                     catch (KeyNotFoundException e)
                     {
