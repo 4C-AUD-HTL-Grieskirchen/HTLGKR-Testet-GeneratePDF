@@ -362,3 +362,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 config.xml
+.idea/
