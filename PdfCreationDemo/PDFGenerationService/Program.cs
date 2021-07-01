@@ -35,8 +35,12 @@ namespace PDFGenerationService
                         var createdRegistration = dict["registrationPdfCreated"] as bool?;
                         var createdResult = dict["resultPdfCreated"] as bool?;
 
-                        dict["screening-station"] = (dict["selectedFacility"] as DocumentReference).GetSnapshotAsync()
-                            .Result.GetValue<string>("name");
+                        var selectedFacility = (dict["selectedFacility"] as DocumentReference).GetSnapshotAsync()
+                            .Result;
+
+                        dict["screening-station"] = selectedFacility.GetValue<string>("name");
+
+                        dict["station-location"] = selectedFacility.GetValue<string>("city");
 
                         var now = DateTime.Now;
 
@@ -52,7 +56,7 @@ namespace PDFGenerationService
                             pdfManager.GeneratePDF(dict, true);
                             storageManager.UploadFile("out.pdf", doc.Id, "registration-pdf");
 
-                            //change.Document.Reference.UpdateAsync("registrationPdfCreated", true);
+                            change.Document.Reference.UpdateAsync("registrationPdfCreated", true);
                         }
                         
                         if (!(createdResult ?? true))
