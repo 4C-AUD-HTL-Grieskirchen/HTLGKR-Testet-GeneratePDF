@@ -63,29 +63,11 @@ tr > td:nth-child(2n - 1) {
 tr > td:nth-child(2n) {
     border: 1px black solid;
     padding: 0 5px;
+    font-size: 10px;
 }
 
 .data {
     margin-bottom: 30px;
-}
-
-.checkbox {
-    display: grid;
-    grid-template-columns: 30px auto;
-    height: 80px;
-}
-
-.checkbox > div {
-    height: 10px;
-    width: 10px;
-    border: solid #616161 1px;
-    margin: 10px 0;
-}
-
-.checkbox > p {
-    float: right;
-    width: calc(100% - 30px);
-    margin: 0;
 }
 
 .important {
