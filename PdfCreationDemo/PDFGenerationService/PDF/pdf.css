@@ -88,6 +88,39 @@ tr > td:nth-child(2n) {
     margin: 0;
 }
 
+.important {
+    color: #B81A1F;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+.left {
+    max-width: 40%;
+    float: left;
+}
+
+.right {
+    max-width: 40%;
+    float: right;
+}
+
+.spacer {
+    height: 30px;
+    width: 100%;
+}
+
+.spacer-large {
+    height: 100px;
+}
+
+.probe {
+    float: left;
+    border: 2px #616161 solid;
+    padding: 20px;
+    margin-right: 20px;
+}
+
 @font-face {
     font-family: 'Open Sans', sans-serif;
     src: url("/assets/OpenSans-Regular.ttf");

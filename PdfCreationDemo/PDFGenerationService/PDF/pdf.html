@@ -27,20 +27,20 @@
     <table>
         <tbody>
         <tr>
-            <td>Name:</td>
+            <td>Nachname:</td>
             <td>{{lastname}}</td>
             <td>Geburtsdatum:</td>
             <td>{{birthdate}}</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>Vorname:</td>
+            <td>{{firstname}}</td>
             <td>Geschlecht:</td>
             <td>{{gender}}</td>
         </tr>
         <tr>
-            <td>Vorname:</td>
-            <td>{{firstname}}</td>
+            <td></td>
+            <td></td>
             <td>SV-Nummer (10-stellig):</td>
             <td>{{social}}</td>
         </tr>
@@ -52,9 +52,9 @@
         </tr>
         <tr>
             <td>Straße, Hausnummer:</td>
-            <td></td>
+            <td>{{street}} {{house}}</td>
             <td>E-mail-Adresse:</td>
-            <td></td>
+            <td>{{email}}</td>
         </tr>
         </tbody>
     </table>
@@ -71,6 +71,34 @@
 </div>
 
 <p>Vorname Nachname _________________________________________ geboren am __________</p>
+
+<div class="spacer"></div>
+
+<p class="important left">Bitte bringen Sie einen amtlichen Lichtbildausweis zur Testung mit.</p>
+
+<p class="right">_________________________________________<br>Datum, Unterschrift</p>
+
+<div class="spacer spacer-large"></div>
+
+<hr>
+
+<p class="important">BEREICH ZUM BESCHRIFTEN und AUSFÜLLEN durch die SCREENING-STATION!</p>
+
+
+<div class="probe">
+
+    <div class="spacer"></div>
+
+    <hr>
+    <p>Fortlaufende Testungs-Nummer</p>
+
+</div>
+
+<p><b>Screening Station:</b> {{screening-station}}</p>
+<p><b>Kürzel/Nr. der Testlinie:</b> {{screening-line}}</p>
+<p><b>Datum / Uhrzeit:</b> {{date}} / {{time}}</p>
+<p><b>Ergebnis:</b> POSITIV / NEGATIV</p>
+
 
 </body>
 </html>
