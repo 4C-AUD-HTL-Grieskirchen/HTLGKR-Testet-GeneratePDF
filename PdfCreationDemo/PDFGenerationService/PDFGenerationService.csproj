@@ -18,7 +18,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="PDF\**">
+    <Content Include="Registration-PDF\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Result-PDF\**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
