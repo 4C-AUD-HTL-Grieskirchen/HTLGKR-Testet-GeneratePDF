@@ -70,7 +70,8 @@ tr > td:nth-child(2n) {
 }
 
 .checkbox {
-    display: block;
+    display: grid;
+    grid-template-columns: 30px auto;
     height: 80px;
 }
 
@@ -78,7 +79,6 @@ tr > td:nth-child(2n) {
     height: 10px;
     width: 10px;
     border: solid #616161 1px;
-    float: left;
     margin: 10px 0;
 }
 
@@ -111,7 +111,7 @@ tr > td:nth-child(2n) {
 }
 
 .spacer-large {
-    height: 100px;
+    height: 130px;
 }
 
 .probe {
