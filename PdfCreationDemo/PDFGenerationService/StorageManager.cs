@@ -19,5 +19,10 @@ namespace PDFGenerationService
             client.UploadObject("htlgkr-testet.appspot.com", $"{targetfolder}/{targetname}.pdf", null,
                 File.Open(filename, FileMode.Open));
         }
+
+        public void DownloadFile(string path, string target)
+        {
+            client.DownloadObject("htlgkr-testet.appspot.com", path, new FileInfo(target).OpenWrite());
+        }
     }
 }

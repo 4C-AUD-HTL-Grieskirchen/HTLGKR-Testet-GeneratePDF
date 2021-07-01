@@ -6432,20 +6432,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\C4tch\\.nuget\\packages\\": {}
+    "C:\\Users\\VarChar42\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Web\\HTLGKR-Testet-GeneratePDF\\PdfCreationDemo\\PdfCreationDemo\\PdfCreationDemo.csproj",
+      "projectUniqueName": "C:\\Dev\\AUDSprint\\HTLGKR-Testet-GeneratePDF\\PdfCreationDemo\\PdfCreationDemo\\PdfCreationDemo.csproj",
       "projectName": "PdfCreationDemo",
-      "projectPath": "D:\\Web\\HTLGKR-Testet-GeneratePDF\\PdfCreationDemo\\PdfCreationDemo\\PdfCreationDemo.csproj",
-      "packagesPath": "C:\\Users\\C4tch\\.nuget\\packages\\",
-      "outputPath": "D:\\Web\\HTLGKR-Testet-GeneratePDF\\PdfCreationDemo\\PdfCreationDemo\\obj\\",
+      "projectPath": "C:\\Dev\\AUDSprint\\HTLGKR-Testet-GeneratePDF\\PdfCreationDemo\\PdfCreationDemo\\PdfCreationDemo.csproj",
+      "packagesPath": "C:\\Users\\VarChar42\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\AUDSprint\\HTLGKR-Testet-GeneratePDF\\PdfCreationDemo\\PdfCreationDemo\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\C4tch\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\VarChar42\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -6518,7 +6525,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   },

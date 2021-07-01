@@ -35,13 +35,24 @@ namespace PDFGenerationService
                         var createdRegistration = dict["registrationPdfCreated"] as bool?;
                         var createdResult = dict["resultPdfCreated"] as bool?;
 
+                        dict["screening-station"] = (dict["selectedFacility"] as DocumentReference).GetSnapshotAsync()
+                            .Result.GetValue<string>("name");
+
+                        var now = DateTime.Now;
+
+                        dict["time"] = now.ToShortTimeString();
+                        dict["date"] = now.ToShortDateString();
+
                         if (!(createdRegistration ?? true))
                         {
                             Console.WriteLine("Generating registration-pdf for " + name);
+
+                            storageManager.DownloadFile((dict["barcodelocation"] as string) + ".svg", "Registration-PDF/assets/qr.svg");
+
                             pdfManager.GeneratePDF(dict, true);
                             storageManager.UploadFile("out.pdf", doc.Id, "registration-pdf");
 
-                            change.Document.Reference.UpdateAsync("registrationPdfCreated", true);
+                            //change.Document.Reference.UpdateAsync("registrationPdfCreated", true);
                         }
                         
                         if (!(createdResult ?? true))

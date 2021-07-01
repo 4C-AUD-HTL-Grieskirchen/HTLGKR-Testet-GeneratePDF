@@ -9,8 +9,17 @@
 
 <img class="logo" src="assets/logo.png" alt="">
 
+<div class="qr">
+    <img src="assets/qr.svg" alt="">
+    <div>
+        <h2>{{doc_id}}</h2>
+        <hr>
+        <p>Fortlaufende Laufzettel-Nummer</p>
+    </div>
+</div>
+
 <h1>Aktion "Österreich testet"</h1>
-<h2>Ergebnisprotokoll</h2>
+<h2>Einwilligungserklärung Antigen-Test</h2>
 <h2>SARS-CoV-2 / Covid-19</h2>
 
 <h4>Zu testende Person</h4>
@@ -18,34 +27,79 @@
     <table>
         <tbody>
         <tr>
-            <td>Herr / Frau:</td>
-            <td>{{lastname}} {{firstname}}</td>
-        </tr>
-        <tr>
+            <td>Nachname:</td>
+            <td>{{lastname}}</td>
             <td>Geburtsdatum:</td>
             <td>{{birthdate}}</td>
         </tr>
         <tr>
-            <td>Testtyp:</td>
-            <td>Antigen-Test auf SARS-Cov-2</td>
+            <td>Vorname:</td>
+            <td>{{firstname}}</td>
+            <td>Geschlecht:</td>
+            <td>{{gender}}</td>
         </tr>
         <tr>
-            <td>Ort:</td>
-            <td>{{station-location}}</td>
-        </tr>
-        <tr>
-            <td>Datum / Uhrzeit der Probeentnahme:</td>
             <td></td>
+            <td></td>
+            <td>SV-Nummer (10-stellig):</td>
+            <td>{{social}}</td>
+        </tr>
+        <tr>
+            <td>PLZ, Ort:</td>
+            <td>{{plz}} {{location}}</td>
+            <td>Mobiltelefonnummer:</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Straße, Hausnummer:</td>
+            <td>{{street}} {{house}}</td>
+            <td>E-mail-Adresse:</td>
+            <td>{{email}}</td>
         </tr>
         </tbody>
     </table>
 </div>
 
-<p>Zum Zeitpunkt der Probeentnahme lautet das Testergebnis:</p>
+<label>
+    <input type="checkbox">
+    Hiermit erkläre ich ausdrücklich meine Zustimmung zur elektronischen Erfassung und Weiterverarbeitung meiner Daten sowie die freiwillige Durchführung eines Testabstrichs zur Durchführung eines Antigen-Schnelltests auf SARS-CoV-2 /Covid-19 (gemäß Informationen und Datenschutzerklärung auf <a href="https://www.österreich-testet.gv.at/datenschutz">www.österreich-testet.gv.at/datenschutz</a>
+</label>
 
-<h1>POSITIV / NEGATIV</h1>
+<div class="spacer"></div>
 
-<p>Dieser Nachweis ist ausschließlich durch die darin angeführte Person für die in den jeweiligen Verordnungen festgelegten Zwecke zu verwenden. Eine missbräuchliche Verwendung oder Verfälschung des Nachweises kann strafrechtliche Konsequenzen zur Folge haben.</p>
+<label>
+    <input type="checkbox">
+    Hiermit erteile ich die Einwilligung und Zustimmung zur Durchführung der Probennahme als Elternteil, Obsorgeberechtigte(r), ErwachsenenvertreterIn/Erwachsenenvertreter
+</label>
+
+<div class="spacer"></div>
+
+<p>Vorname Nachname _________________________________________ geboren am __________</p>
+
+<p class="important left">Bitte bringen Sie einen amtlichen Lichtbildausweis zur Testung mit.</p>
+
+<p class="right">_________________________________________<br>Datum, Unterschrift</p>
+
+<div class="spacer spacer-large"></div>
+
+<hr>
+
+<p class="important">BEREICH ZUM BESCHRIFTEN und AUSFÜLLEN durch die SCREENING-STATION!</p>
+
+
+<div class="probe">
+
+    <div class="spacer"></div>
+
+    <hr>
+    <p>Fortlaufende Testungs-Nummer</p>
+
+</div>
+
+<p><b>Screening Station:</b> {{screening-station}}</p>
+<p><b>Datum / Uhrzeit:</b> {{date}} / {{time}}</p>
+<p><b>Ergebnis:</b> POSITIV / NEGATIV</p>
+
 
 </body>
 </html>
