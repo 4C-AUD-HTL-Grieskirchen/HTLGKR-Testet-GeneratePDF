@@ -31,16 +31,26 @@ namespace PDFGenerationService
                         var dict = doc.ToDictionary();
                         dict["doc_id"] = doc.Id;
 
-                        var email = dict["email"] as string;
-                        var created = dict["registrationPdfCreated"] as bool?;
+                        var name = dict["lastname"] as string;
+                        var createdRegistration = dict["registrationPdfCreated"] as bool?;
+                        var createdResult = dict["resultPdfCreated"] as bool?;
 
-                        if (!(created ?? true))
+                        if (!(createdRegistration ?? true))
                         {
-                            Console.WriteLine("Generating email for " + email);
-                            pdfManager.GeneratePDF(dict);
-                            storageManager.UploadFile("out.pdf", doc.Id);
+                            Console.WriteLine("Generating registration-pdf for " + name);
+                            pdfManager.GeneratePDF(dict, true);
+                            storageManager.UploadFile("out.pdf", doc.Id, "registration-pdf");
 
                             change.Document.Reference.UpdateAsync("registrationPdfCreated", true);
+                        }
+                        
+                        if (!(createdResult ?? true))
+                        {
+                            Console.WriteLine("Generating result-pdf for " + name);
+                            pdfManager.GeneratePDF(dict, false);
+                            storageManager.UploadFile("out.pdf", doc.Id, "result-pdf");
+
+                            change.Document.Reference.UpdateAsync("resultPdfCreated", true);
                         }
                     }
                     catch (KeyNotFoundException e)

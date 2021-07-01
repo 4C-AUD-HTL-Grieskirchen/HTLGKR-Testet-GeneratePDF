@@ -14,9 +14,9 @@ namespace PDFGenerationService
             client = StorageClient.Create(creds);
         }
 
-        public void UploadFile(string filename, string targetname)
+        public void UploadFile(string filename, string targetname, string targetfolder)
         {
-            client.UploadObject("htlgkr-testet.appspot.com", $"registration-pdf/{targetname}.pdf", null,
+            client.UploadObject("htlgkr-testet.appspot.com", $"{targetfolder}/{targetname}.pdf", null,
                 File.Open(filename, FileMode.Open));
         }
     }
